@@ -9,7 +9,8 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    conn.write("Name: MBW")
+    conn.write("Name: MBW");
+    // conn.write("Move: up");
   })
 
   conn.on("data", (data) => {
