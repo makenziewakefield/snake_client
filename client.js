@@ -1,5 +1,5 @@
 const net = require("net");
-const { IP, PORT } = require("./constants");
+const { IP, PORT, PLAYER_NAME } = require("./constants");
 
 const connect = function () {
   const conn = net.createConnection({
@@ -10,7 +10,7 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    conn.write("Name: MBW");
+    conn.write(`Name: ${PLAYER_NAME}`);
   })
 
   conn.on("data", (data) => {
