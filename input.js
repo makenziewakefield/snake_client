@@ -12,6 +12,13 @@ const setupInput = function(conn) {
   return stdin;
 };
 
+const messages = {
+  1: "Hello!",
+  2: "I'm hungry",
+  3: "Ssssssss",
+  4: "Goodbye!"
+}
+
 const handleUserInput = function(key) {
   if (key === "w") {
     connection.write("Move: up");
@@ -23,6 +30,8 @@ const handleUserInput = function(key) {
     connection.write("Move: right");
   } else if (key === '\u0003') {
     process.exit();
+  } else if (key in messages) {
+    connection.write(`Say: ${messages[key]}`);
   }
 };
 
