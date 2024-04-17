@@ -8,9 +8,9 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot of snake when client is initially connected"](Users/makenziewakefield/lighthouse/snake_client/01_screenshot.png)
+!["screenshot of snake when client is initially connected"](files://C:/Users/makenziewakefield/lighthouse/snake_client/01_screenshot.png)
 
-!["screenshot of long snake maneuvering around itself for more food"](Users/makenziewakefield/lighthouse/snake_client_02_screenshot.png)
+!["screenshot of long snake maneuvering around itself for more food"](files://C:/Users/makenziewakefield/lighthouse/snake_client_02_screenshot.png)
 
 
 
