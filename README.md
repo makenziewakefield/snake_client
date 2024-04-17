@@ -8,10 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot of snake when client is initially connected"](files://C:/Users/makenziewakefield/lighthouse/snake_client/01_screenshot.png)
-
-!["screenshot of long snake maneuvering around itself for more food"](files://C:/Users/makenziewakefield/lighthouse/snake_client_02_screenshot.png)
-
+<img width="569" alt="01_screenshot" src="https://github.com/makenziewakefield/snake_client/assets/160777047/b22cb4b4-d1f3-4f2a-8e82-65e9a7809e60">
+<img width="566" alt="02_screenshot" src="https://github.com/makenziewakefield/snake_client/assets/160777047/b3361a7a-036c-402a-8d94-299befabfe00">
 
 
 ## Getting Started
@@ -20,16 +18,18 @@ Before you can run this client, you will need to be running the server side whic
 - Run the development snake client using the `node play.js` command.
 
 
-> [!TIP]
+## How To Play
 
-Move the snake using the following keyboard shortcuts:
-  W: ⬆
-  S: ⬇
-  A: ⬅
-  D: ➡️
+**Move the snake using the following keyboard shortcuts:**
 
-You can display special messages to other players by using the following keyboard shortcuts:
-  1️: "Hello!"
-  2: "I'm hungry"
-  3: "Ssssssss"
-  4: "Goodbye!"
+* W: ⬆
+* S: ⬇
+* A: ⬅
+* D: ➡️
+
+**You can display special messages to other players by using the following keyboard shortcuts:**
+
+1. "Hello!"
+2. "I'm hungry"
+3. "Ssssssss"
+4. "Goodbye!"
