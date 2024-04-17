@@ -12,6 +12,13 @@ const setupInput = function(conn) {
   return stdin;
 };
 
+const movements = {
+  w: "up",
+  a: "left",
+  s: "down",
+  d: "right"
+}
+
 const messages = {
   1: "Hello!",
   2: "I'm hungry",
@@ -20,14 +27,8 @@ const messages = {
 }
 
 const handleUserInput = function(key) {
-  if (key === "w") {
-    connection.write("Move: up");
-  } else if (key === "a") {
-    connection.write("Move: left");
-  } else if (key === "s") {
-    connection.write("Move: down");
-  } else if (key === "d") {
-    connection.write("Move: right");
+  if (key in movements) {
+    connection.write(`Move: ${movements[key]}`);
   } else if (key === '\u0003') {
     process.exit();
   } else if (key in messages) {
