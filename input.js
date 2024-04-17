@@ -29,10 +29,10 @@ const messages = {
 const handleUserInput = function(key) {
   if (key in movements) {
     connection.write(`Move: ${movements[key]}`);
-  } else if (key === '\u0003') {
-    process.exit();
   } else if (key in messages) {
     connection.write(`Say: ${messages[key]}`);
+  } else if (key === '\u0003') {
+    process.exit();
   }
 };
 
